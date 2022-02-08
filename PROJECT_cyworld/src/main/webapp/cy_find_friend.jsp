@@ -22,7 +22,7 @@ if(username.equals("null") || username == null || curIdx == null || curIdx.equal
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -35,7 +35,7 @@ if(username.equals("null") || username == null || curIdx == null || curIdx.equal
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
 	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
 	crossorigin="anonymous"></script>
-<title>cy_mini</title>
+<title>cy_find</title>
 </head>
 <style>
 #wrap {

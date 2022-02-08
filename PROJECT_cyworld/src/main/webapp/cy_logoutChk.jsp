@@ -17,7 +17,7 @@ response.sendRedirect("cy_main.jsp");
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>cy_logoutChk</title>
 </head>
 <body>
