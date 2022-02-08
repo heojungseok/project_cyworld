@@ -4,10 +4,6 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%
-/* HttpSession cySession = request.getSession();
-String username = String.valueOf(cySession.getAttribute("username"));
-String userID = String.valueOf(cySession.getAttribute("userID"));
-int idx = Integer.parseInt(String.valueOf(cySession.getAttribute("idx")));  */
 
 %>
 <!DOCTYPE html>
@@ -47,9 +43,9 @@ section {
 }
 </style>
 <body>
-<%=request.getContextPath() %>
+<%-- <%=request.getContextPath() %>
 <%=request.getServletContext().getRealPath("edit_imgs") %>
-<%=request.getServletPath() %>
+<%=request.getServletPath() %> --%>
 	<div class="d-flex justify-content-around">
 		<!-- 회원과 비회원 구분 -->
 		<c:choose>
