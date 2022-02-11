@@ -103,13 +103,24 @@ section {
 				<article id="" class="d-flex flex-column col-4">
 					<div class="d-flex justify-content-center align-items-center"
 						id="profile_img" style="height: 300px;">
+						<c:choose>
+						<c:when test="${miniData.imgs == null }">
 						<img class="border border-1 rounded" alt="기본 이미지"
 							src="./img/basic_profile.jpg"
-							style="width: 200px; height: 250px;">
+							style="width: 200px; height: 230px;">
+							</c:when>
+							<c:otherwise>
+							<img class="border border-1 rounded" alt="${miniData.idx } 의 이미지"
+							src="<%=request.getContextPath() %>/edit_imgs/${miniData.imgs }"
+							style="width: 200px; height: 230px;">
+							</c:otherwise>
+						</c:choose>	
 					</div>
 					<div class="" id="profile_comment" style="height: 170px;">${miniData.intro2 }</div>
-					<a href=""><button class="btn btn-light" type="button" value=""
+						<c:if test="${miniData.idx == MyHidx }">	
+					<a href="cy_edit_minihp.jsp"><button class="btn btn-light" type="button" value=""
 							style="width: 120px;">프로필 수정</button></a>
+						</c:if>
 				</article>
 				<article id=""
 					class="d-flex flex-column justify-content-around col-8">

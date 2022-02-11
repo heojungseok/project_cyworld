@@ -122,10 +122,10 @@ section {
 						</c:choose>	
 					</div>
 					<div class="" id="profile_comment" style="height: 170px;">${miniData.intro2 }</div>
-					<a href="cy_edit_minihp.jsp">
-					<button class="btn btn-light" name="h_idx" type="button" value=""
-							style="width: 120px;">프로필 수정</button>
-					</a>
+						<c:if test="${miniData.idx == MyHidx }">	
+					<a href="cy_edit_minihp.jsp"><button class="btn btn-light" type="button" value=""
+							style="width: 120px;">프로필 수정</button></a>
+						</c:if>
 				</article>
 				<article id="mini_room" class="d-flex flex-column col-8">
 					<div class="d-flex flex-column " id="room_section" style="height:;">
