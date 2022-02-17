@@ -198,7 +198,7 @@ section {
 					<ul class="nav flex-column nav-pills nav-fill">
 						<li class="nav-item"><a class="nav-link " aria-current="page"
 							href="cy_mini?idx=${miniData.idx }">홈</a></li>
-						<li class="nav-item"><a class="nav-link " href="#">다이어리</a></li>
+						<li class="nav-item"><a class="nav-link " href="cy_diary.jsp">다이어리</a></li>
 						<li class="nav-item"><a class="nav-link active"
 							href="cy_visitbook?idx=${miniData.idx }">방명록</a></li>
 					</ul>
@@ -226,15 +226,5 @@ section {
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript">
-		/* $(document).ready(function() {
-			
-			
-			$("#loginBtn").on('click', function() {
-				window.open('test');
-			});
-
-		}); */
-	</script>
 </body>
 </html>

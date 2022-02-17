@@ -52,7 +52,7 @@ public class EditCtl extends HttpServlet {
 					imgs = p.getSubmittedFileName(); // 파일 이름 중복 해결해야 함
 //					imgs += imgs  + ",";
 //					System.out.println("fileName :" + imgs);
-					System.out.println("path :" + path);
+//					System.out.println("path :" + path);
 					// 파일을 담는 것
 					InputStream inputStream = p.getInputStream();
 					File tempFile = new File(path);
